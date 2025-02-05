@@ -1,11 +1,0 @@
-Script started on Wed Feb  5 17:39:49 2025
-[1m[7m%[27m[1m[0m                                                                                                                                                                    ]2;anshulkumar@Anshuls-MacBook-Air-2:~/assign]1;~/assign]7;file://Anshuls-MacBook-Air-2.local/Users/anshulkumar/assign\[0m[27m[24m[J[01;32m➜  [36massign[00m [K[?1h=[?2004hscript assignment_recording.txt[31Dexit                           [27D./process_management[?1l>[?2004l
-]2;./process_management]1;./process_managementProcess PID: 4487, Role: Parent
-Process PID: 4488, Role: Child 1
-Child with PID: 4488, Role: Child 1 has exited
-Process PID: 4489, Role: Child 2
-Child with PID: 4489, Role: Child 2 has exited
-Process PID: 4487, Role: Parent - Exiting
-[1m[7m%[27m[1m[0m                                                                                                                                                                    ]2;anshulkumar@Anshuls-MacBook-Air-2:~/assign]1;~/assign]7;file://Anshuls-MacBook-Air-2.local/Users/anshulkumar/assign\[0m[27m[24m[J[01;32m➜  [36massign[00m [K[?1h=[?2004h./process_management[20Dscript assignment_recording.txt[31Dexit                           [27D[?1l>[?2004l
-]2;exit]1;exit
-Script done on Wed Feb  5 17:39:57 2025

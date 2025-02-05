@@ -1,0 +1,11 @@
+Script started on Wed Feb  5 17:48:58 2025
+[1m[7m%[27m[1m[0m                                                                                                                                                                    ]2;anshulkumar@Anshuls-MacBook-Air-2:~/assign]1;~/assign]7;file://Anshuls-MacBook-Air-2.local/Users/anshulkumar/assign\[0m[27m[24m[J[01;32m➜  [36massign[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36massign[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K../assign1[?1l>[?2004l
+]2;./assign1]1;./assign1Process PID: 5925, Role: Parent
+Process PID: 5926, Role: Child 1
+Process PID: 5927, Role: Child 2
+Child with PID: 5926, Role: Child 1 has exited
+Child with PID: 5927, Role: Child 2 has exited
+Process PID: 5925, Role: Parent - Exiting
+[1m[7m%[27m[1m[0m                                                                                                                                                                    ]2;anshulkumar@Anshuls-MacBook-Air-2:~/assign]1;~/assign]7;file://Anshuls-MacBook-Air-2.local/Users/anshulkumar/assign\[0m[27m[24m[J[01;32m➜  [36massign[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Wed Feb  5 17:49:07 2025
