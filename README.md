@@ -1,5 +1,5 @@
 # Delete the existing recordings
-assignment_recording.txt ke andar ke contents ko delete kar dena
+rec.txt ke andar ke contents ko delete kar dena
 
 # Run the following command
 **Ek time pe ek command run karna**
