@@ -6,7 +6,11 @@ rec.txt ke andar ke contents ko delete kar dena
 
 ```
 script rec.txt
+```
+```
 ./assign1
+```
+```
 exit
 ```
 # Zip file Banane ke liye
