@@ -7,40 +7,43 @@
 int main() {
     pid_t pid1, pid2;
     int status;
-
-    printf("Process PID: %d, Role: Parent\n", getpid());
+    int children = 2;
 
     pid1 = fork();
-
-    if (pid1 < 0) {
-        fprintf(stderr, "Fork Failed\n");
-        return 1;
-    }
-    else if (pid1 == 0) {
-        printf("Process PID: %d, Role: Child 1\n", getpid());
-        exit(0);
-    }
-    else {
-        pid2 = fork();
-
-        if (pid2 < 0) {
-            fprintf(stderr, "Fork Failed\n");
-            return 1;
-        }
-        else if (pid2 == 0) {
-            printf("Process PID: %d, Role: Child 2\n", getpid());
+    
+    switch(pid1) {
+        case -1:
+            perror("fork");
+            exit(1);
+        case 0:
+            usleep(1000); 
+            printf("ProcessID: %d, Role-Child 1 \n", getpid());
             exit(0);
-        }
-        else {
-            waitpid(pid1, &status, 0);
-            printf("Child with PID: %d, Role: Child 1 has exited\n", pid1);
+        default:
+            pid2 = fork();
             
-            waitpid(pid2, &status, 0);
-            printf("Child with PID: %d, Role: Child 2 has exited\n", pid2);
-
-            printf("Process PID: %d, Role: Parent - Exiting\n", getpid());
-            exit(0);
-        }
+            switch(pid2) {
+                case -1:
+                    perror("second fork");
+                    exit(1);
+                case 0: 
+                    usleep(3000);
+                    printf("ProcessID: %d, Role-Child 2\n", getpid());
+                    exit(0);
+            }
     }
+
+    if (pid1 > 0 && pid2 > 0) {
+        printf("ProcessID: %d, Role-Parent \n", getpid());
+
+        while (children > 0) {
+                        pid_t finished = wait(0);
+                        printf("Child (ProcessID: %d) has exited\n", finished);
+                        children--;
+                    }
+        
+        printf("exiting ProcessID: %d, Role-Parent\n", getpid());
+    }
+
     return 0;
 }
